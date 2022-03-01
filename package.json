@@ -4,12 +4,18 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "npm run serve && node backend/prod.server.js"
   },
   "dependencies": {
+    "@better-scroll/core": "^2.4.2",
+    "@better-scroll/observe-dom": "^2.4.2",
+    "@better-scroll/slide": "^2.4.2",
+    "axios": "^0.26.0",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vue3-lazy": "*",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
@@ -17,8 +23,10 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "sass": "^1.32.7",
-    "sass-loader": "^12.0.0"
+    "js-base64": "^3.7.2",
+    "node-sass": "^5.0.0",
+    "pinyin": "^2.11.0",
+    "sass-loader": "^10.1.0"
   },
   "browserslist": [
     "> 1%",
